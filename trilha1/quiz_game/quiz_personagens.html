@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Personagens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+    <link rel="stylesheet" href="animate.min.css"> <!-- Remova o CDN desta linha -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h1 class="animate__animated animate__fadeInUp">Quiz de Personagens</h1>
+        <div id="question-container" class="animate__animated animate__fadeInUp">
+            <p id="question-text">Analisar a imagem apresentada no Visor Cartesiano Interativo abaixo, para identificar a posição relativa em termos de par ordenado (x,y) ocupada pelo personagem Mario Bros.</p>
+            <img id="question-image" src="img/tema 1 - projeto.png" alt="Imagem da Pergunta">
+            <input type="text" id="answer-input" placeholder="Apresentar a sua resposta aqui." class="animate__animated animate__fadeInUp">
+            <button id="submit-button" class="submit-button animate__animated animate__fadeInUp">
+                Enviar Resposta <i class="fas fa-check-circle"></i>
+            </button>            
+        </div>
+        
+        <!-- Div para exibir o histórico de respostas -->
+            <div id="history-container" style="display: none;">
+            <h2 class="animate__animated animate__fadeInUp">Relatório Final</h2>
+            <p id="total-correct" class="animate__animated animate__fadeInUp"></p>
+            <hr class="animate__animated animate__fadeInUp">
+            <!-- Imagem do Troféu (inicialmente oculta) -->
+            <img id="trophy-image" src="img/trofeu.png" alt="Troféu" class="hidden trophy-image">
+            <p id="trophy-message" class="hidden">Você venceu!</p>
+            <p id="date-time" class="hidden"></p>
+   
+            <!-- Aqui será exibido o histórico de respostas -->
+            <!-- Elemento HTML para exibir o histórico de respostas -->
+            <div id="history-display" style="display: none;">
+                <h2>Resultado Detalhado</h2>
+            <!-- Local onde a data e o horário serão exibidos -->
+            <div id="date-container">
+                <p>Data: <span id="date"></span></p>
+                </div>
+                <div id="time-container">
+                <p>Horário: <span id="time"></span></p>
+            </div>            
+
+                <div id="history-content">
+                    <p id="date-time" class="hidden">Data/Horário:</p>
+                </div>
+                <!-- Botão para ver o histórico de respostas -->
+            <button id="history-button" class="history-button animate__animated animate__fadeInUp">
+                Ver Histórico de Respostas <i class="fas fa-history"></i>
+            </button>
+            
+            <!-- Botões para próxima fase e reiniciar o quiz (inicialmente ocultos) -->
+            <button id="next-phase-button" class="next-phase-button" style="display: none;">
+                Próxima Fase
+                <i class="fas fa-arrow-circle-right"></i> <!-- Ícone de seta para a direita -->
+            </button>
+            
+            <button id="restart-button" class="restart-button animate__animated animate__fadeInUp">
+                Reiniciar o Quiz <i class="fas fa-redo"></i>
+            </button>
+            
+        </div>
+        </div>
+    </div>
+
+    <!-- Não é necessário incluir novamente o history-container, remova este bloco duplicado -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="script.js"></script>
+</body>
+</html>

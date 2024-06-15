@@ -1,0 +1,46 @@
+/* css/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.interactive-border {
+    padding: 20px;
+    font-size: 1.2rem;
+    color: #333;
+    background: #fff;
+    border: 4px solid transparent;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: borderAnimation 3s linear infinite;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: #3f51b5; /* Azul */
+        box-shadow: 0 0 10px rgba(63, 81, 181, 0.5);
+    }
+    25% {
+        border-color: #673ab7; /* Roxo */
+        box-shadow: 0 0 10px rgba(103, 58, 183, 0.5);
+    }
+    50% {
+        border-color: #ff9800; /* Laranja */
+        box-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
+    }
+    75% {
+        border-color: #9c27b0; /* Roxo Escuro */
+        box-shadow: 0 0 10px rgba(156, 39, 176, 0.5);
+    }
+    100% {
+        border-color: #3f51b5; /* Azul */
+        box-shadow: 0 0 10px rgba(63, 81, 181, 0.5);
+    }
+}

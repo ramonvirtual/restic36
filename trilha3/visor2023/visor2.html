@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano Cartesiano Interativo</title>
+    <link rel="stylesheet" href="visor2.css">
+    <!-- Adicione o link para o Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <div class="container" id="container">
+
+        <div id="passo">
+            <div id="pergunta" class="pergunta-customizada">
+                <p id="pergunta-texto" class="texto">1º Passo: Marque um ponto no visor.</p>
+            </div>
+        </div>
+
+        <!-- Div para coordenadas -->
+        <div id="coordenadas">
+            <svg id="svg" width="500" height="500">
+                <!-- Linhas dos eixos -->
+                <line x1="0" y1="250" x2="500" y2="250" stroke="black" stroke-width="2" class="visor-line"/>
+                <line x1="250" y1="0" x2="250" y2="500" stroke="black" stroke-width="2" class="visor-line"/>
+            </svg>
+
+            <p id="coordenadas-texto" class="texto">Coordenadas: (0, 0)</p>
+        </div>
+        <!-- Div para passos e botões -->
+        <div id="passo">
+            <!-- Botões com ícones do Font Awesome -->
+            <button id="tracarLinha" style="display: none;"><i class="fas fa-pencil-alt"></i> Traçar Linha</button>
+            <button id="respostaSim" style="display: none;"><i class="far fa-check-circle"></i> SIM</button>
+            <button id="respostaNao" style="display: none;"><i class="far fa-times-circle"></i> NÃO</button>
+            <button id="proximaFase" style="display: none;"><i class="fas fa-arrow-right"></i> Próxima Fase</button>
+            <button id="verRelatorio" style="display: none;">Ver Relatório</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="visor2.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Super Mario World</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">Personagens</h1>
+        <div class="row">
+            <div class="character" id="character1">
+                <div class="name-box" class="button-container">
+                <button class="button" onclick="showDescription('character1')">Mario Bros</button>
+                </div>
+                <img src="img/mario.png" alt="Mario">
+            </div>
+            
+            <div class="character" id="character2">
+                <div class="name-box">
+                <button class="button" onclick="showDescription('character2')">Luigi</button>
+
+                </div>
+                <img src="img/luigi.png" alt="Luigi">
+            </div>
+            <div class="character" id="character3">
+                <div class="name-box">
+                <button class="button" onclick="showDescription('character3')">Yoshi</button>
+                </div>
+                <img src="img/yoshi.png" alt="Yoshi">
+            </div>
+        </div>
+        <div class="row">
+            <div class="character" id="character4">
+                <div class="name-box">
+       <button class="button" onclick="showDescription('character4')">Toad</button>
+                </div>
+                <img src="img/toad.png" alt="Toad">
+            </div>
+            <div class="character" id="character5">
+                <div class="name-box">
+                    <button class="button" onclick="showDescription('character5')">Princess Peach</button>
+                </div>
+                <img src="img/princess peach.png" alt="Princess Peach">
+            </div>
+            <div class="character" id="character6">
+                <div class="name-box">
+             <button class="button" onclick="showDescription('character6')">Bowser</button>
+                </div>
+                <img src="img/bowser.png" alt="Bowser">
+            </div>
+        </div>
+        <button class="back-button" onclick="showConfirmation()">Voltar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

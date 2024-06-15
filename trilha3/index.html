@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Página de Instruções</title>
+    <!-- Inclua o CSS do SweetAlert -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Seu arquivo CSS personalizado -->
+    <link rel="stylesheet" href="etapa1.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="visor2023/visor2.css">
+    <!-- Adicione o link para o Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"> <!-- Adicione o URL da página inicial no atributo href -->
+            <img src="img/Logo + texto copy.png" alt="Logo do Portal Educacional">
+            </a>
+        </div>
+        <nav>
+            <!-- Remove o elemento div que continha o ícone do menu -->
+            <ul id="menu" class="menu">
+                <li><a href="#" class="active"><i class="fa fa-home"></i> <span>Início</span></a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+
+<div id="content">
+    <!-- <section id="content"> -->
+    <div class="instructions">
+            <div class="welcome-message">
+                <h2 class="fade-in">Bem-vindo ao Portal Educacional RSCVIRTUAL</h2>
+                <p class="fade-in">Esta é uma plataforma educacional interativa, chamada Educacional RSCVIRTUAL, que integra diferentes trilhas de aprendizagem para atender às diversas necessidades dos alunos.</p>
+            </div>
+    </div>  
+  
+    <div class="instructions">
+        <div class="container" id="container">
+
+            <div id="passo">
+                <div id="pergunta" class="pergunta-customizada">
+                    <p id="pergunta-texto" class="texto">Missão: Ajude o Mario a encontrar a Princesa. Para isso, marque um ponto onde o personagem do Mario está localizado..</p>
+                </div>
+            </div>
+    
+            <!-- Div para coordenadas -->
+            <div id="coordenadas">
+                <svg id="svg" width="500" height="500">
+                    <!-- Linhas dos eixos -->
+                 <!--    <line x1="0" y1="250" x2="500" y2="250" stroke="black" stroke-width="2" class="visor-line"/> -->
+                 <!--    <line x1="250" y1="0" x2="250" y2="500" stroke="black" stroke-width="2" class="visor-line"/> -->
+
+                    <!-- Remove as Linhas dos eixos -->
+                    <line x1="0" y1="250" x2="500" y2="250" stroke="#" stroke-width="2" class="visor-line"/>
+                    <line x1="250" y1="0" x2="250" y2="500" stroke="#" stroke-width="2" class="visor-line"/>
+                </svg>
+    
+                <p id="coordenadas-texto" class="texto"></p>
+            </div>
+            <!-- Div para passos e botões -->
+            <div id="passo">
+                <!-- Botões com ícones do Font Awesome -->
+                <button id="tracarLinha" style="display: none;"><i class="fas fa-pencil-alt"></i> Traçar Linha</button>
+                <button id="respostaSim" style="display: none;"><i class="far fa-check-circle"></i> SIM</button>
+                <button id="respostaNao" style="display: none;"><i class="far fa-times-circle"></i> NÃO</button>
+                <button id="proximaFase" style="display: none;"><i class="fas fa-arrow-right"></i> Próxima Fase</button>
+                <button id="verRelatorio" style="display: none;">Ver Relatório</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="img/logofooter.png" alt="Logo do Portal Educacional">
+            </div>
+            <p class="copyright">Copyright &copy; 2023 Ramon Santos Costa</p>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  
+    <!-- Inclua o JavaScript do SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Seu script personalizado -->
+    <script src="visor2023/visor2.js"></script>
+    <script src="seu_script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

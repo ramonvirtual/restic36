@@ -1,0 +1,160 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o contêiner principal */
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Alterado para altura mínima */
+    text-align: center;
+    padding: 20px; /* Espaçamento interno para dispositivos maiores */
+}
+
+/* Estilize a área do plano cartesiano */
+#coordenadas {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#coordenadas-texto {
+    font-size: 18px;
+}
+
+/* Estilo para os botões */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Botões ocupam toda a largura do contêiner */
+    max-width: 200px; /* Largura máxima dos botões */
+}
+
+/* Estilize a área do plano cartesiano */
+#svg {
+    height: 500px;
+    width: 500px;
+    border: 1px solid #ccc;
+    position: relative;
+    background-image: url("img/visor_mario.png");
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+}
+
+/* Estilo para o botão Traçar Linha */
+#tracarLinha {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Estilo para o botão SIM */
+#respostaSim {
+    background-color: #28A745;
+    color: white;
+}
+
+/* Estilo para o botão NÃO */
+#respostaNao {
+    background-color: #DC3545;
+    color: white;
+}
+
+/* Estilo para o botão Próxima Fase e Ver Relatório */
+#proximaFase, #verRelatorio {
+    background-color: #FFC107;
+    color: white;
+}
+
+/* Estilizando ícones do Font Awesome */
+i {
+    margin-right: 5px;
+}
+
+/* Estilo para as perguntas */
+#pergunta {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Estilo para a mensagem de resposta */
+#respostaMensagem {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Estilo para centralizar o conteúdo do passo */
+#passo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para o texto do passo */
+.texto {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Estilo para a área da pergunta */
+.pergunta-customizada {
+    background-color: #06596e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo para o texto da pergunta */
+#pergunta-texto {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Estilo personalizado para o botão Confirmar */
+.custom-confirm-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilize o link dentro do botão */
+.custom-confirm-button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilize o link quando o mouse estiver sobre ele */
+.custom-confirm-button a:hover {
+    text-decoration: underline;
+}
+
+
+/* Regras de mídia para telas menores */
+@media (max-width: 767px) {
+    /* Redefinir estilos conforme necessário para telas menores */
+    #container {
+        padding: 10px; /* Reduzir o espaçamento interno */
+    }
+}

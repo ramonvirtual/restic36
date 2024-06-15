@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/tema3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    transition: background-opacity 0.3s ease;
+  }  
+
+  body:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Ajuste a opacidade desejada ao passar o mouse */
+  }
+  
+#quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h1 {
+    color: #6200EE;
+}
+
+#question-container {
+    margin-top: 20px;
+}
+
+#question-text {
+    font-size: 18px;
+}
+
+#answer-input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 3px solid #1f1616;
+    border-radius: 8px;
+}
+
+#submit-button,
+#history-button {
+    background-color: #6200EE;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: auto; /* Define a margem esquerda como "auto" para centralização horizontal */
+    margin-right: auto; /* Define a margem direita como "auto" para centralização horizontal */
+}
+
+/* Estilos para o histórico de respostas */
+#history-container {
+    margin-top: 20px;
+    text-align: left;
+    display: none;
+}
+
+#history-card {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    animation: fadeInUp 0.5s ease; /* Animação de entrada */
+}
+
+#history-card p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o total de acertos */
+#total-correct {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6200EE; /* Cor roxa */
+}
+
+/* Estilos para animar elementos com a classe animate__animated */
+.animate__animated {
+    animation-duration: 1s; /* Duração da animação (1 segundo) */
+    animation-fill-mode: both;
+}
+
+/* Adicione a animação fadeInUp aos elementos com a classe animate__fadeInUp */
+.animate__fadeInUp {
+    animation-name: fadeInUp;
+}
+
+/* Classe de animação fadeInUp */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#question-image {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Estilos para o botão "Próxima Fase" */
+#next-phase-button {
+    background-color: #076236; /* Cor de fundo */
+    color: #FFFFFF; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 4px; /* Cantos arredondados */
+    cursor: pointer; /* Ícone de cursor ao passar o mouse */
+    margin-top: 10px; /* Espaçamento superior */
+    margin-left: auto; /* Define a margem esquerda como "auto" para centralização horizontal */
+    margin-right: auto; /* Define a margem direita como "auto" para centralização horizontal */
+}
+
+#next-phase-button:hover {
+    background-color: #00ff3c; /* Cor de fundo ao passar o mouse */
+}
+
+  /* Centralize a imagem do troféu */
+.trophy-image {
+    width: 100px; /* Largura desejada */
+    height: 100px; /* Altura desejada */
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border: 5px solid #ffff00;
+    padding: 60px;
+    border-radius: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Estilo para a mensagem "Você venceu!" */
+#trophy-message {
+    font-size: 24px;
+    color: gold; /* Cor da mensagem do troféu */
+    text-align: center;
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+/* Estilo para a data e o horário */
+#date-time {
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte (negrito) */
+    color: #333; /* Cor do texto */
+    margin-top: 10px; /* Espaço superior */
+    text-align: center; /* Centraliza o texto */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Sombra no texto */
+    background-color: #f5f5f5; /* Cor de fundo */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ddd; /* Borda */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+#date-container, #time-container {
+    text-align: left; /* Centralize o conteúdo */
+    margin-top: 5px; /* Espaço superior */
+    background-color: #ffffff;
+}
+
+#date, #time {
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte (negrito) */
+    color: #333; /* Cor do texto */
+    padding: 5px; /* Espaçamento interno */
+}
+
+/* Adicione estas regras CSS para estilizar o botão "Reiniciar o Quiz" */
+#restart-button {
+    background-color: #3498db; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão (ajuste conforme necessário) */
+    border: none; /* Remova a borda do botão */
+    border-radius: 5px; /* Adicione bordas arredondadas ao botão */
+    cursor: pointer; /* Altere o cursor para parecer um ponteiro ao passar o mouse */
+    margin-top: 10px; /* Espaçamento superior do botão em relação ao elemento anterior (ajuste conforme necessário) */
+    transition: background-color 0.3s ease; /* Adicione uma transição suave à cor de fundo do botão */
+    /* Outros estilos do botão */
+    margin-left: auto; /* Define a margem esquerda como "auto" para centralização horizontal */
+    margin-right: auto; /* Define a margem direita como "auto" para centralização horizontal */
+}
+
+#restart-button:hover {
+    background-color: #2980b9; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Adicione qualquer outra personalização desejada aqui */

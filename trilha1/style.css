@@ -1,0 +1,63 @@
+body {
+    background-image: url('img/fundo1.jpeg'); /* Substitua 'background.jpg' pela URL da sua imagem de fundo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Usar min-height para garantir que o conteúdo seja visível */
+}
+
+.game-box {
+    background-color: #2b2b2b; /* Cor de fundo da caixa de jogo */
+    border: 5px solid #007bff; /* Cor da borda azul */
+    border-radius: 20px; /* Borda arredondada */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Adicione isso para centralizar o título */
+}
+
+/* Tornar o título menor em telas menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+}
+
+button {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #45a049; /* Cor de fundo verde escuro quando hover */
+}
+
+/* Centraliza os botões horizontalmente */
+button#iniciarQuiz,
+button#responderPerguntas,
+button#converseIA,
+button#irParaChatbot {
+    display: block;
+    margin: 10px auto; /* Adicione algum espaço entre os botões */
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Matemática</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclua os links para os arquivos JavaScript e CSS do SweetAlert2 abaixo -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="game-box">
+        <h1>Trilha 1: Troféu de Excelência</h1>
+        
+        <button id="iniciarQuiz"> <i class="fas fa-play"></i> Iniciar o Quiz</button>
+    </div>
+ 
+    <div id="gameContainer" style="display: none; text-align: center; padding: 20px;">
+        <p class="game-box">Nesta atividade, você irá identificar a posição dos personagens do Super Mario Bros no ambiente interativo ao clicar no botão "Começar". Após localizar a posição dos personagens, você deverá responder às perguntas para identificar a posição deles no quiz interativo. Para isso, é necessário digitar corretamente os nomes dos personagens na caixa. Você pode conhecer os nomes dos personagens clicando no botão "Conheça os Personagens" e acessar o Chatbot clicando em "Ir para o Chatbot".</p>
+
+        <iframe id="gameIframe" style="max-width:100%" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+        <div style="margin-top: 30px;">
+            <button id="responderPerguntas" style="display: block; margin-bottom: 10px;"><i class="fas fa-question-circle"></i> Responder às Perguntas</button>
+            <div>
+                <button id="converseIA" style="display: none;"> <i class="fas fa-comments"></i> Conheça os Personagens</button>
+                <button id="chatbot" style="display: none;"> <i class="fas fa-comments"></i> Conheça os Personagens</button>
+                <button id="irParaChatbot" style="display: none;"><i class="fas fa-comments"></i> Ir para o Chatbot</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #282c34; /* Cor de fundo escura */
+    color: #ffffff; /* Cor do texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.question-container {
+    border: 3px solid #00bcd4; /* Cor da borda azul (relacionada a marketing digital) */
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #333; /* Cor de fundo mais escura */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra mais intensa */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.question {
+    font-size: 28px; /* Tamanho da fonte aumentado */
+    font-weight: bold;
+    color: #00bcd4; /* Cor do texto azul (relacionada a marketing digital) */
+    margin: 0;
+    position: relative;
+}
+
+.question::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 0; /* Removendo a linha (altura zero) */
+    background: linear-gradient(to right, #00bcd4, #ff4081); /* Gradiente de azul para rosa */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.question:hover::before {
+    opacity: 1;
+}
+
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.option {
+    flex: 1;
+    width: 48%;
+    margin: 1%;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    border: 3px solid #00bcd4; /* Cor da borda azul (relacionada a marketing digital) */
+    box-sizing: border-box;
+    background-color: #444; /* Cor de fundo mais escura */
+}
+
+.option:hover {
+    transform: scale(1.05);
+    border-color: #ff4081; /* Cor da borda rosa ao passar o mouse (relacionada a inovação) */
+}
+
+.option img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.option:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Adicionei uma regra de mídia para telas menores (por exemplo, dispositivos móveis) */
+@media (max-width: 768px) {
+    .option {
+        width: 100%;
+    }
+}
+
+/* Estilos específicos para dispositivos móveis */
+@media (max-width: 480px) {
+    .quiz-container {
+        padding: 10px;
+    }
+
+    .question-container {
+        padding: 10px;
+    }
+
+    .option {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,189 @@
+/* Estilos CSS para o body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Cor de fundo de fallback */
+    background-image: url("img/tema2.webp"); /* Caminho para a imagem de fundo */
+    background-size: cover; /* Cobrir toda a área do body */
+    background-position: center; /* Centralizar a imagem */
+    background-repeat: no-repeat; /* Evitar repetição da imagem */
+}
+
+.chat-container {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.chat-header {
+    background-color: #066b3d;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 18px;
+}
+
+.chat-messages {
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.chat-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+#send-button {
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+#send-button:hover {
+    background-color: #E84100;
+}
+
+/* ... (estilos existentes) */
+
+.intro-message {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.chat-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.option-button {
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.option-button:hover {
+    background-color: #E84100;
+}
+
+.character-image {
+    text-align: center;
+    margin: 20px auto; /* Centraliza horizontalmente e adiciona um espaço superior */
+}
+
+#character-image {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    margin-left: 100px;
+}
+
+/* CSS (styles.css) para o botão "Reiniciar Chat" */
+.reset-button {
+    background-color: #3498db; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Altera o cursor ao passar o mouse */
+    font-size: 14px; /* Tamanho da fonte */
+    margin-top: 10px; /* Espaço superior */
+    transition: background-color 0.3s; /* Transição de cor de fundo */
+}
+
+/* Estilos CSS para o botão "Voltar" */
+.back-button {
+    background-color: #3498db; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Altera o cursor ao passar o mouse */
+    font-size: 14px; /* Tamanho da fonte */
+    margin-top: 10px; /* Espaço superior */
+    text-decoration: none; /* Remove a decoração de texto */
+    display: inline-block; /* Exibe como bloco em linha */
+    transition: background-color 0.3s; /* Transição de cor de fundo */
+}
+
+/* Estilos CSS para os botões personalizados */
+.option-button,
+.reset-button,
+.back-button {
+    background-color: #3498db; /* Cor de fundo padrão */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Altera o cursor ao passar o mouse */
+    font-size: 14px; /* Tamanho da fonte */
+    margin-top: 10px; /* Espaço superior */
+    text-decoration: none; /* Remove a decoração de texto */
+    display: inline-block; /* Exibe como bloco em linha */
+    transition: background-color 0.3s; /* Transição de cor de fundo */
+}
+
+.option-button:hover,
+.reset-button:hover,
+.back-button:hover {
+    background-color: #2980b9; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos CSS específicos para ícones do Font Awesome */
+.option-button i,
+.reset-button i,
+.back-button i {
+    margin-right: 8px; /* Espaçamento entre o ícone e o texto do botão */
+    font-size: 16px; /* Tamanho do ícone */
+}
+
+/* Estilos CSS para o botão "Reiniciar Chat" */
+.reset-button {
+    background-color: #e74c3c; /* Cor de fundo para o botão "Reiniciar Chat" */
+}
+
+.reset-button:hover {
+    background-color: #c0392b; /* Cor de fundo ao passar o mouse sobre o botão "Reiniciar Chat" */
+}
+
+/* Estilos CSS para o botão "Voltar" */
+.back-button {
+    background-color: #2ecc71; /* Cor de fundo para o botão "Voltar" */
+}
+
+.back-button:hover {
+    background-color: #27ae60; /* Cor de fundo ao passar o mouse sobre o botão "Voltar" */
+}

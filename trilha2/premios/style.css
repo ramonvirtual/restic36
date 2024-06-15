@@ -1,0 +1,69 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.premiacao-container .premio-box {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.premiacao-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.premio-box {
+    flex: 0 1 calc(25% - 20px); /* 25% de largura com margens de 10px */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.premio-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.premio-box img {
+    width: 80%;
+    height: 80%;
+    max-width: 100%;
+    max-height: 100%;
+    /* object-fit: cover; Remova esta linha se não quiser distorcer a imagem */
+}
+
+/* Adicione regras de mídia para telas menores */
+@media (max-width: 768px) {
+    .premio-box img {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}

@@ -1,0 +1,284 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../gpemac/img/fundo1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color:#023535;
+    ;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ffcc00; /* Cor que será aplicada ao passar o mouse */
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+main {
+    padding: 20px;
+}
+
+#content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Alinhar horizontalmente com espaçamento entre os flexbox */
+    gap: 20px; /* Espaçamento entre os cards */
+}
+
+.feature {
+    flex: 1; /* Distribuir o espaço igualmente entre os cards */
+    min-width: calc(25% - 20px); /* Largura mínima dos cards, com espaço entre eles */
+    padding: 20px;
+    background-color: #015958;
+    color: #fff;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feature:last-child {
+    margin-right: 0;
+}
+
+.feature-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-icon i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    #content {
+        padding: 20px 10px;
+    }
+
+    #features .feature {
+        flex-basis: calc(50% - 10px);
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .feature:last-child {
+        margin-right: 0;
+    }
+}
+
+/* Estilos para telas muito pequenas (exemplo: smartphones em modo retrato) */
+@media (max-width: 480px) {
+    #features .feature {
+        flex-basis: 100%;
+    }
+}
+
+/* Estilos para o ícone do menu */
+.menu-icon {
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 5px;
+    transition: transform 0.3s; /* Animação de transformação */
+}
+
+/* Estilos para o texto do menu */
+.menu-text {
+    display: inline-block;
+    transition: transform 0.3s; /* Animação de transformação */
+}
+
+/* Estilos de animação ao passar o mouse */
+.animated {
+    transform: translateX(10px); /* Desloca o ícone e o texto para a direita */
+}
+
+/* Efeito de escurecimento ao passar o mouse sobre os flexbox */
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #008F8C;
+    color: #fff;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flexbox:hover {
+    background-color: #ffcc00; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+}
+
+/* Estilos para a mensagem de boas-vindas */
+.welcome-message {
+    text-align: center;
+    background-color: #008F8C;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.welcome-message h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.welcome-message p {
+    font-size: 18px;
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: #023535;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center; /* Centralizar o texto no footer */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+}
+
+.footer-logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+.copyright {
+    margin-top: 10px;
+}
+
+.footer-text {
+    flex-grow: 1; /* Permite que o texto "Portal Educacional" ocupe o espaço restante no meio */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Estilos para a animação de rotação dos ícones de redes sociais */
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+    transform-origin: center; /* Define o ponto de origem da transformação como o centro */
+    transform: rotate(0deg); /* Define a rotação inicial como 0 graus */
+}
+
+/* Exemplo de media query para telas menores */
+@media (max-width: 768px) {
+    .social-icons a {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    /* Outros ajustes de estilo para telas menores */
+}

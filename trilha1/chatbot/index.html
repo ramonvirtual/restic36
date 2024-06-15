@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Chatbot Super Mario</title>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <p>Chatbot Interativo - Educacional RSCVIRTUAL</p>
+        </div>
+        <div class="character-image">
+            <img src="" alt="" id="character-image">
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <!-- Aqui serão exibidas as mensagens do chat -->
+        </div>
+        <!-- Adicione um botão "Reiniciar Chat" -->
+<!-- Adicione o botão "Voltar" com redirecionamento -->
+<!-- Adicione os botões personalizados com ícones do FontAwesome -->
+<div class="chat-options">
+    <p class="intro-message">Selecione um personagem abaixo e clique em "Enviar" para saber mais sobre ele.</p>
+    <button class="option-button" onclick="selectCharacter('Mario')">
+        <i class="fas fa-gamepad"></i> Mario
+    </button>
+    <button class="option-button" onclick="selectCharacter('Luigi')">
+        <i class="fas fa-gamepad"></i> Luigi
+    </button>
+    <button class="option-button" onclick="selectCharacter('Yoshi')">
+        <i class="fas fa-gamepad"></i> Yoshi
+    </button>
+    <button class="option-button" onclick="selectCharacter('Toad')">
+        <i class="fas fa-gamepad"></i> Toad
+    </button>
+    <button class="option-button" onclick="selectCharacter('Princess Peach')">
+        <i class="fas fa-gamepad"></i> Princess Peach
+    </button>
+    <button class="option-button" onclick="selectCharacter('Bowser')">
+        <i class="fas fa-gamepad"></i> Bowser
+    </button>
+    <button class="reset-button" onclick="resetChat()">
+        <i class="fas fa-redo-alt"></i> Reiniciar Chat
+    </button>
+    <a class="back-button" href="/gpemac/projetorsc/gamewordwall/index.html">
+        <i class="fas fa-arrow-left"></i> Voltar
+    </a>
+</div>
+
+
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Digite sua mensagem...">
+            <button id="send-button">Enviar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

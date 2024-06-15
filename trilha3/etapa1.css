@@ -1,0 +1,112 @@
+/* Estilos para as instruções gerais */
+.instructions, .instructions2, .instructions3 {
+  text-align: center;
+  padding: 20px;
+  color: #f4f4f4;
+  border-radius: 10px;
+  background-color: #120251;
+  margin: 20px;
+}
+
+.instructions3 {
+  text-align: left;
+}
+
+.instructions4 {
+  text-align: center;
+  color: #f4f4f4;
+  border-radius: 10px;
+  background-color: #034159;
+  margin: 20px;
+}
+
+/* Estilos para as perguntas */
+.question {
+  margin-bottom: 20px;
+}
+
+/* Estilos para o container dos botões */
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Adaptação para telas menores */
+}
+
+/* Estilos para os botões */
+.button {
+  background-color: #038C3E;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para a mensagem */
+.mensagem {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #007bff;
+}
+
+/* Estilos para as opções de resposta */
+.alternativas {
+  display: flex;
+  flex-wrap: wrap; /* Permite que as opções se ajustem em telas menores */
+  justify-content: center;
+}
+
+.alternativas label {
+  margin-bottom: 10px;
+  font-size: 16px;
+  margin-left: 10px;
+  flex: 1; /* Distribui igualmente as opções em telas maiores */
+  max-width: 200px; /* Limita a largura das opções em telas menores */
+  text-align: center;
+}
+
+.alternativas label input[type="radio"] {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.alternativas label input[type="radio"] + span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #c21313cd;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.alternativas label input[type="radio"]:checked + span {
+  background-color: #333;
+}
+
+/* Estilos para o canvas do plano cartesiano */
+#canvas {
+  background-image: url('https://www.mariouniverse.com/wp-content/img/maps/snes/smw/world-map-8.png');
+  background-size: cover;
+  min-height: 250px; /* Altura mínima do canvas */
+  border-style: outset;
+  border-width: 5px;
+}
+
+/* Estilos para o título centralizado */
+#content {
+  text-align: center;
+  padding: 60px;
+}
+
+/* Estilos para ocultar o botão "SIM" */
+#no-button {
+  display: none;
+}
